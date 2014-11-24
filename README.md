@@ -196,7 +196,8 @@ end
 Create user
 ```ruby
 users = client.core_user_create_user({:email => 'suchemail@test.com',
-:firstname => 'Test', :lastname => 'User'})
+:firstname => 'Test', :lastname => 'User', username: 'suchuser',
+password: 'suchpassword'})
 
 users.each do |user|
   user.id                   # => 2
